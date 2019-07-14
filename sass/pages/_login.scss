@@ -1,6 +1,166 @@
-body{
-    background-color:$beige;
-}
 
 // change this to container bg color
 
+.login-container{
+    display: flex;
+    background-color:$light;
+    height: 100vh;
+    widows: 100vw;
+    align-items:center;
+    justify-content: center;   
+}
+
+.lg-left-sd{
+    border:1px solid $dark-co;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none;
+    background-color: $dark-co;
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.5)
+      ), url(https://images.pexels.com/photos/234798/pexels-photo-234798.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 50%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    h2{
+        text-shadow:1px 1px 1px $dark-co;
+    }
+    p{
+        color:$beige;
+    }
+    a{
+        text-decoration: none;
+        color:$light;
+        border: 1px solid $light;
+        padding: 10px 10px;
+        width: 25%;
+        text-align: center;
+    &:hover{
+       border:1px solid $beige;
+       color:$beige;
+        }    
+    }
+    
+}
+
+
+.lg-right-sd{
+    border:1px solid rgba(0, 0, 0, 0.2);
+    border-left:none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 50%;
+    width: 25%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 0 10px;
+    background-color: $light;
+    .hidden{
+        display: none;
+    }
+    h1{
+        font-size:30px;
+        text-align: center;
+    }
+    i{
+        color:green;
+    }
+    span i{
+        color:$dark-co;
+        font-size: 50px;
+        display: block;
+        text-align: center;
+    }
+    .valid{
+        color:green;
+    }
+
+    label{
+        display:block;
+        color:$dark-co;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+        display: block;
+        text-decoration: none;
+        color:$dark-co;
+
+        &:hover{
+            color:green;
+        }
+    }
+    input{
+        width: 98%;
+        height: 12%;
+    }
+    button{
+        display:block;
+        margin:10px 0 5px 0;
+        width: 100%;
+        height: 17%;
+        border: 1px solid $brown;
+        background-color: $dark-co;
+        color:$beige;
+        cursor: pointer;
+    &:hover{  
+        background-color:$dk-beige;
+        border: 1px solid $beige;
+        color:$dark-co;
+        }
+    &:focus{
+            border:1px solid $brown;
+        }
+    }
+}
+
+@media (max-width:1000px){
+    .login-container{
+        flex-direction:column;
+        align-items:center;
+        justify-content: center; 
+        .lg-left-sd{
+            width: 50%;
+            border-left:1px solid rgba(0, 0, 0, 0.2);
+            padding: 0 25px;
+            max-height: 150px;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 3px;
+
+            h2{
+                text-shadow:1px 1px 1px $dark-co;
+                font-size:18px;
+            }
+            // p{
+            // }
+            a{
+                display: none;
+            }
+        }   
+        .lg-right-sd{
+            width: 50%;
+            border-left:1px solid rgba(0, 0, 0, 0.2);
+            padding: 0 25px;
+            max-height: 640px;
+            border-top:none;
+            h1{
+                font-size:30px;
+                text-align: center;
+            }
+            span i{
+                color:$dark-co;
+                font-size: 50px;
+                text-align: center;
+            }
+        }
+    }
+    
+}
