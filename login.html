@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/7ec2dbed5b.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="https://kit.fontawesome.com/7ec2dbed5b.js"></script>
+		<link rel="stylesheet" href="css/main.css" />
 
-    <title> Login - The Leather Bracelet eShop </title>
-</head>
-<body>
-    <section class="login-container">
-        <!-- left side image with text and button for sellers -->
-        <div class="lg-left-sd">
-            <h2>BRA Leather Bracelets</h2>
-            <p>High Quality Leather Bracelets.</p>
-             <a href="#">For Sellers</a>
-        </div>
-        <div class="lg-right-sd">
-        <form action="">
+		<title>Login - The Leather Bracelet eShop</title>
+	</head>
+	<body>
+		<section class="container">
+			<!-- left side image with text and button for sellers -->
+			<div class="lg-left-sd">
+				<h2>BRA Leather Bracelets</h2>
+				<p>High Quality Leather Bracelets.</p>
+				<button class="button-transparent">For sellers</button>
+			</div>
 
-            
-            <span><i class="fas fa-address-book"></i></span>
-            <h1> Sign in Below</h1>
-            <!-- email input -->
-            <label for="email">Email Address</label>
-            <input type="email"
-                    name="email-address"
-                    id="email"
-                    placeholder="Email Address">
-            <p class="valid hidden"><i class="fas fa-check"></i> Email address Validated!</p>
+			<div class="lg-right-sd">
+				<span><i class="fas fa-address-book"></i></span>
+				<h1>Sign in Below</h1>
+				<form action="">
+					<!-- email input -->
+					<label for="email">Email Address</label>
+					<input
+						type="email"
+						name="email-address"
+						id="email"
+						placeholder="Email Address"
+					/>
+					<p class="valid hidden">
+						<i class="fas fa-check"></i> Email address Validated!
+					</p>
 
-            <!-- password input -->
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="password">
+					<!-- password input -->
+					<label for="password">Password</label>
+					<input
+						type="password"
+						name="password"
+						id="password"
+						placeholder="password"
+					/>
 
-            <!-- signin button and create acount link -->
-            <button class="primary-btn">Sign In</button>
-            <a href="register.html" class="primary-text" target="_blank">Don't have an account? Sign up here</a>
-        </form>              
-        </div>
-    
-    </section>
-</body>
+					<!-- signin button and create acount link -->
+					<button class="primary-btn">Sign In</button>
+					<a href="register.html" class="primary-text" target="_blank"
+						>Don't have an account? Sign up here</a
+					>
+				</form>
+			</div>
+		</section>
+	</body>
 </html>

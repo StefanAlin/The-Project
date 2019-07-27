@@ -1,18 +1,25 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "base/reset";
+@import "base/typography";
 
-@import 'utilities/variables';
-@import 'utilities/mixins';
-@import 'base/reset';
-@import 'base/typography';
+@import "layout/navigation";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+@import "layout/forms";
 
-@import 'layout/navigation';
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/sidebar';
-@import 'layout/forms';
+@import "components/inputs";
+@import "components/buttons";
 
-@import 'components/buttons';
+@import "pages/home";
+@import "pages/login";
+@import "pages/register";
 
-@import 'pages/home';
-@import 'pages/login';
-@import 'pages/register';
+.hidden {
+	display: none;
+}
+:focus {
+	outline: none;
+}
